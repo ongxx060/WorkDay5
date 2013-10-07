@@ -9,7 +9,16 @@ Public Class Form1
     End Sub
 
     Function FirstName(ByVal name As String) As String
-        Return "Not Implemented Yet"
+        'Find the first space
+        Dim idx As Integer
+        idx = name.IndexOf(" ")
+
+        'extract the first name
+        Dim fname As String
+        fname = name.Substring(0, idx)
+
+        Return fname
+
     End Function
 
 End Class
